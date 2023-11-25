@@ -1,45 +1,57 @@
-// import button
-import Button from "./Button";
-
 // import navlink
 import { NavLink } from "react-router-dom";
 
 // logo cart
 import Cart from "../assets/assetNavbar/cart.png";
 import Search from "../assets/assetNavbar/search.png";
+import Profile from "../assets/assetNavbar/1.png";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white fixed w-full top-0 left-0 right-0 shadow dark:bg-gray-800">
-      <div className=" flex items-center justify-between px-14 py-8">
-        {/* logo */}
-        <div>
-          <h1 className="font-bold text-4xl">alaskaki.</h1>
-        </div>
+    <nav className="fixed left-0 right-0 top-0 z-10 w-full bg-white shadow">
+      <div className="container mx-auto">
+        <div className="flex items-center lg:flex-nowrap flex-wrap justify-between lg:px-8 lg:py-8 py-3">
+          {/* logo */}
+          <div className="w-full lg:w-auto text-center mb-2 lg:mb-0">
+            <NavLink to="/">
+              <div className="sm:">
+                <h1 className="font-bold lg:text-4xl text-2xl">alaskaki.</h1>
+              </div>
+            </NavLink>
+          </div>
 
-        {/* search */}
-        <form className="w-[50%]" action="">
-          <input
-            className="rounded-md w-full"
-            type="text"
-            placeholder="cari di sini"
-          />
-        </form>
+          {/* profile mobile */}
+          {/* <NavLink to="/login">
+            <div className="lg:hidden">
+              <img className="lg:w-8 lg:h-8" src={Profile} alt="" />
+            </div>
+          </NavLink> */}
 
-        {/* logo cart */}
-        <img className="h-8 w-7 my-1" src={Cart} alt="" />
+          {/* search */}
+          <form
+            className="lg:w-[60%] w-[70%] relative flex items-center"
+            action=""
+          >
+            <img className="absolute ml-3" src={Search} alt="" />
 
-        <div className="bg-gray-700 w-[2px] h-8"></div>
+            <input
+              className="rounded-md w-full pl-10"
+              type="text"
+              placeholder="cari di sini"
+            />
+          </form>
 
-        <div className="flex gap-4">
-          {/* button daftar */}
-          <NavLink to="/register">
-            <Button>Daftar</Button>
-          </NavLink>
+          {/* logo cart */}
+          <img className="lg:h-9 lg:w-8 my-1" src={Cart} alt="" />
 
-          {/* button login */}
           <NavLink to="/login">
-            <Button>Login</Button>
+            <div>
+              <img
+                className="lg:w-8 lg:h-8"
+                src={Profile}
+                alt=""
+              />
+            </div>
           </NavLink>
         </div>
       </div>
