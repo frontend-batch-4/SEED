@@ -7,7 +7,7 @@ import Register from "./pages/login-register/Register";
 import Login from "./pages/login-register/Login";
 
 // pages information
-import About from "./pages/information/About-us";
+import About from "./pages/information/About";
 import Delivery from "./pages/information/Delivery-inforamtion";
 import Privacy from "./pages/information/Privacy-policy";
 import Terms from "./pages/information/Terms&conditions";

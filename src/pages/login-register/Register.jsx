@@ -1,6 +1,6 @@
 export default function Register() {
   return (
-    <div className="flex justify-center lg:my-24 my-60">
+    <div className="flex justify-center lg:my-24 mt-10 ">
       <section className="max-w-sm p-6 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-10 mt-10">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">
           <form>

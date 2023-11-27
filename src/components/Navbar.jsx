@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="fixed left-0 right-0 top-0 z-10 w-full bg-white shadow">
       <div className="container mx-auto">
-        <div className="flex items-center lg:flex-nowrap flex-wrap justify-between lg:px-8 lg:py-8 py-3">
+        <div className="flex items-center lg:flex-nowrap flex-wrap justify-between  lg:py-8 py-3">
           {/* logo */}
           <div className="w-full lg:w-auto text-center mb-2 lg:mb-0">
             <NavLink to="/">

@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 
 export default function Login() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 lg:mt-[105px] mt-36">
+    <section className="bg-gray-50 dark:bg-gray-900 lg:mt-[105px] mt-[50px]">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <a
           href="#"
-          className="flex items-center mb-6 text-4xl font-bold text-gray-900 dark:text-white"
+          className="flex items-center mb-6 lg:text-4xl  font-bold text-gray-900 dark:text-white"
         >
           alaskaki.
         </a>
