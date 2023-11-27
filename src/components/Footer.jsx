@@ -19,7 +19,7 @@ import Returns from "../pages/customer-service/Returns&refunds";
 import Shipping from "../pages/customer-service/Shipping-policy";
 
 // information
-import About from "../pages/information/About-us";
+import About from "../pages/information/About";
 import Delivery from "../pages/information/Delivery-inforamtion";
 import Privacy from "../pages/information/Privacy-policy";
 import Term from "../pages/information/Terms&conditions";

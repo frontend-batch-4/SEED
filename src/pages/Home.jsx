@@ -25,10 +25,85 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
 export default function Home() {
+  const items = [
+    {
+      img: F,
+      title: "Nike Air Max 97",
+      price: 96.0,
+    },
+    {
+      img: G,
+      title: "Nike Air Jordan",
+      price: 96.0,
+    },
+    {
+      img: H,
+      title: "Nike SB Dunk",
+      price: 96.0,
+    },
+    {
+      img: I,
+      title: "Nike Air Force 1",
+      price: 96.0,
+    },
+    {
+      img: B,
+      title: "Adidas Munchen",
+      price: 96.0,
+    },
+    {
+      img: C,
+      title: "Adidas Samba OG",
+      price: 96.0,
+    },
+    {
+      img: D,
+      title: "Adidas Handball Spezial",
+      price: 96.0,
+    },
+    {
+      img: E,
+      title: "Adidas Hamburg",
+      price: 96.0,
+    },
+
+    // diskon
+    {
+      img: E,
+      title: "Adidas Hamburg",
+      diskon: 100.0,
+      price: 96.0,
+    },
+    {
+      img: H,
+      title: "Nike SB Dunk",
+      diskon: 100.0,
+      price: 96.0,
+    },
+    {
+      img: B,
+      title: "Adidas Munchen",
+      diskon: 100.0,
+      price: 96.0,
+    },
+    {
+      img: I,
+      title: "Nike Air Force 1",
+      diskon: 100.0,
+      price: 96.0,
+    },
+    {
+      img: D,
+      title: "Adidas Handball Spezial",
+      diskon: 100.0,
+      price: 96.0,
+    },
+  ];
+
   return (
     <>
       {/* coorosel */}
-      <section className="container lg:pt-32 pt-[125px]">
+      <section className="container flex justify-center lg:pt-32 pt-[125px]">
         <Splide aria-label="My Favorite Images" className="p-0">
           {/* slide 1 */}
           <SplideSlide>
@@ -62,7 +137,7 @@ export default function Home() {
 
       {/* type product */}
       <div className="container">
-        <div className="grid md:grid-cols-4 grid-cols-2 justify-center gap-8 mt-10 ">
+        <div className="grid lg:grid-cols-4 grid-cols-2 justify-center  gap-8 mt-10 ">
           <div className="relative overflow-hidden box-border h-[330px] w-full rounded-lg bg-gray-300 flex flex-col justify-center items-center font-bold text-2xl">
             <div className="h-full w-full">
               <img src={AA} className="h-full w-full object-cover" alt="" />
@@ -106,12 +181,12 @@ export default function Home() {
       </div>
       {/* trending product */}
       <div className="flex justify-center gap-10 mt-16">
-        <div className="my-6">
-          <div className="bg-gray-400 lg:w-[410px] w-20 lg:h-[2px]"></div>
+        <div className="my-6 mx-2">
+          <div className="bg-gray-400 lg:w-[360px] w-20 h-[2px]"></div>
         </div>
         <h1 className=" lg:text-4xl text-2xl">Trending Products</h1>
-        <div className="my-6">
-          <div className="bg-gray-400 w-[410px] h-[2px]"></div>
+        <div className="my-6 mx-2">
+          <div className="bg-gray-400 lg:w-[360px] w-20 h-[2px]"></div>
         </div>
       </div>
       <div className="flex justify-center my-4">
@@ -121,82 +196,27 @@ export default function Home() {
       </div>
 
       {/* detail trending product */}
-      <div className="flex justify-center mt-14 gap-10">
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-24 px-2 ">
-              <img src={F} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Nike Air Max 97</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-16 px-1 ml-3">
-              <img src={G} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Nike Air Jordan</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="">
-              <img src={H} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Nike SB Dunk</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-28 px-5">
-              <img src={I} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Nike Air Force 1</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-      </div>
-
-      <div className="flex justify-center mt-14 gap-10">
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-8">
-              <img src={B} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Handball Spezial</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-8">
-              <img src={C} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Samba OG</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-6">
-              <img src={D} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Hamburg</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
-        <div>
-          <div className="h-[335px] w-[265px] rounded-lg bg-gray-200">
-            <div className="py-6">
-              <img src={E} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Spezial St Patrik</p>
-          <p className="font-bold text-orange-500">$ 96.00</p>
-        </div>
+      <div className="grid lg:grid-cols-4 grid-cols-2 justify-center mt-14 lg:gap-8 gap-6 px-20">
+        {/* loop rendering */}
+        {items.map((item, index) => {
+          if (item.diskon == undefined) {
+            return (
+              <div key={index}>
+                <div className="lg:h-[335px] h-[200px] w-full rounded-lg bg-gray-200">
+                  <img
+                    src={item.img}
+                    className="w-full h-full object-contain"
+                    alt=""
+                  />
+                </div>
+                <p className="mt-4 font-medium">{item.title}</p>
+                <p className="font-bold text-orange-500">
+                  $ {item.price.toFixed(2)}
+                </p>
+              </div>
+            );
+          }
+        })}
       </div>
 
       {/* button lihat lebih banyak */}
@@ -213,92 +233,46 @@ export default function Home() {
       {/* judul diskon  */}
       <div className="flex justify-center gap-10 mt-16">
         <div className="my-6">
-          <div className="bg-gray-400 w-[490px] h-[2px]"></div>
+          <div className="bg-gray-400 lg:w-[490px] w-36 h-[2px]"></div>
         </div>
-        <h1 className=" text-4xl">Sale Off</h1>
+        <h1 className="lg:text-4xl text-2xl">Sale Off</h1>
         <div className="my-6">
-          <div className="bg-gray-400 w-[490px] h-[2px]"></div>
+          <div className="bg-gray-400 lg:w-[490px] w-36 h-[2px]"></div>
         </div>
       </div>
       <div className="flex justify-center my-4">
-        <p className="text-gray-600">
+        <p className="text-gray-600 ">
           Mirum est notare quam littera gothica quam nunc putamus parum claram!
         </p>
       </div>
 
       {/* diskon  */}
-      <div className="flex justify-center mt-14 gap-8">
-        <div className="mb-10">
-          <div className="h-[265px] w-[210px] rounded-lg bg-gray-200 ">
-            <div className="py-6">
-              <img src={E} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Spezial St Patrik</p>
-          <div className="">
-            <p className="text-gray-500 font-light text-sm">
-              <s>$ 100.00</s>
-            </p>
-            <p className="font-bold text-orange-500">$ 96.00</p>
-          </div>
+
+        <div className="grid lg:grid-cols-5 grid-cols-3 justify-center gap-6 px-10 mb-20 mt-14">
+          {/* loop rendering */}
+          {items.map((item, index) => {
+            if (item.diskon !== undefined) {
+              return (
+                <div key={index} className="">
+                  <div className="lg:h-[300px] h-[168px] lg:w-52 rounded-lg bg-gray-200">
+                    <img
+                      src={item.img}
+                      className="w-full h-full object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p className="mt-4 font-medium">{item.title}</p>
+                  <p className="text-gray-500 font-light text-sm">
+                    <s>$ {item.diskon.toFixed(2)}</s>
+                  </p>
+                  <p className="font-bold text-orange-500">
+                    $ {item.price.toFixed(2)}
+                  </p>
+                </div>
+              );
+            }
+          })}
         </div>
-        <div className="mb-10">
-          <div className="h-[265px] w-[210px] rounded-lg bg-gray-200">
-            <div className="py-3">
-              <img src={H} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Nike SB Dunk</p>
-          <div className="">
-            <p className="text-gray-500 font-light text-sm">
-              <s>$ 100.00</s>
-            </p>
-            <p className="font-bold text-orange-500">$ 96.00</p>
-          </div>
-        </div>
-        <div className="mb-10">
-          <div className="h-[265px] w-[210px] rounded-lg bg-gray-200">
-            <div className="py-8 px-2">
-              <img src={B} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Handball Spezial</p>
-          <div className="">
-            <p className="text-gray-500 font-light text-sm">
-              <s>$ 100.00</s>
-            </p>
-            <p className="font-bold text-orange-500">$ 96.00</p>
-          </div>
-        </div>
-        <div className="mb-10">
-          <div className="h-[265px] w-[210px] rounded-lg bg-gray-200">
-            <div className="py-24 px-4">
-              <img src={I} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Nike Air Force 1</p>
-          <div className="">
-            <p className="text-gray-500 font-light text-sm">
-              <s>$ 100.00</s>
-            </p>
-            <p className="font-bold text-orange-500">$ 96.00</p>
-          </div>
-        </div>
-        <div className="mb-10">
-          <div className="h-[265px] w-[210px] rounded-lg bg-gray-200">
-            <div className="py-8 px-2">
-              <img src={D} alt="" />
-            </div>
-          </div>
-          <p className="mt-4 font-medium">Adidas Hamburg</p>
-          <div className="">
-            <p className="text-gray-500 font-light text-sm">
-              <s>$ 100.00</s>
-            </p>
-            <p className="font-bold text-orange-500">$ 96.00</p>
-          </div>
-        </div>
-      </div>
     </>
   );
 }
