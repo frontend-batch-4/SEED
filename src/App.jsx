@@ -31,6 +31,16 @@ function ScrollToTop() {
 
   return null;
 }
+import { Routes, Route } from 'react-router-dom'
+
+// pages
+// contoh cara import komponen 👇👇👇
+
+import Product from './pages/product';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+
+// import NamaKomponen from './pages/NamaKomponen';
 
 export default function App() {
   return (
@@ -49,6 +59,9 @@ export default function App() {
 
         {/* informasion */}
         <Route path="/About-us" element={<About-us />} />
+        <Route path="/product" element={<Product/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
         {/* customer service */}
       </Routes>
 
